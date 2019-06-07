@@ -1,0 +1,14 @@
+<%= form_for garden do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br />
+  <%= f.label :min_strength %>
+  <%= f.number_field :min_strength %><br />
+  <%= f.label :happiness_rating %>
+  <%= f.number_field :happiness_rating %><br />
+  <%= f.label :heat_rating %>
+  <%= f.number_field :heat_rating %><br />
+  <%= f.label :membership_years %>
+  <%= f.number_field :membership_years %><br />
+  <br />
+  <%= f.submit %>
+<% end %>

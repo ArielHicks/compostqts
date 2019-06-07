@@ -22,3 +22,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+Corinna says, a good READ ME includes:
+-	Description
+-	Installation guide – bundle install – specific security gems to install
+-	Contributors guide – how to contribute to your project
+-	Licensing Statement – This project is licensed under the MIT public source license etc.
+Commit 50 or more times.

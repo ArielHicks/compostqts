@@ -1,0 +1,15 @@
+<h1><%= @garden.name %></h1>
+Years of Membership: <%= @garden.membership_years %><br />
+Heat Rating: <%= @garden.heat_rating %><br />
+Happiness Rating: <%= @garden.happiness_rating %><br />
+Minimum Strength: <%= @garden.min_strength %><br />
+<br />
+<% if current_user.admin %>
+  <%= link_to "Edit Garden", edit_garden_path(@garden) %>
+<% else %>
+  <%= form_tag("/plots", method: "post") do %>
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= hidden_field_tag :garden_id, @garden.id %>
+    <%= button_tag "Choose this garden" %>
+  <% end %>
+<% end %>

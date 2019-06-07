@@ -1,0 +1,10 @@
+<h1>Gardens</h1>
+<% if current_user.admin %>
+  <%= render partial: 'admin', locals: {gardens: @gardens} %>
+<% else %>
+  <ul>
+  <% @gardens.each do |garden| %>
+    <li><%= link_to "Go on #{garden.name}", garden_path(garden) %></li>
+  <% end %>
+  </ul>
+<% end %>

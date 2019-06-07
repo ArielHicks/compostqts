@@ -1,0 +1,13 @@
+<% if flash[:notice] %>
+<%= flash[:notice] %>
+<% end %>
+
+<h1>Welcome <%= @user.name %></h1>
+<p>Membership Years: <%= @user.membership_years %></p>
+<p>Heatstroke Liklihood: <%= @user.heatstroke %></p>
+<p>Strength Level: <%= @user.strength_level %></p>
+<% if @user.admin %>
+<p>ADMIN</p>
+<% end %>
+<%= link_to "See Gardens", plots_path %>
+<%= link_to "Log Out", logout_path, method: :delete %>

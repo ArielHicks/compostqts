@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  password_digest: MyString
+  heatstroke: 1
+  happiness: 1
+  membership_years: 1
+  strength_level: 1
+
+two:
+  name: MyString
+  password_digest: MyString
+  heatstroke: 1
+  happiness: 1
+  membership_years: 1
+  strength_level: 1

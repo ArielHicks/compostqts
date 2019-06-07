@@ -1,0 +1,2 @@
+module PlotsControllerHelper
+end
